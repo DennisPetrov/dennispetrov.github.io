@@ -464,7 +464,13 @@ p {
 .btn--red:hover {
     color: var(--white);
 	border-color: var(--red);
-    background-color: var(--red);
+    background-color: rgba(241, 82, 67, 0.45);
+}
+
+.btn--red:active {
+    color: var(--white);
+	border-color: var(--red);
+    background-color: rgba(241, 82, 67, 0.15);
 }
 
 .btn--gray {
@@ -512,7 +518,13 @@ p {
 .btn--outlined_true_white:hover {
     color: white;
 	border-color: white;
-    background-color: transparent;
+    background-color: rgba(117, 117, 117, 0.2);
+}
+
+.btn--outlined_true_white:hover {
+    color: white;
+	border-color: white;
+    background-color:rgba(117, 117, 117, 0.45);
 }
 
 
@@ -525,7 +537,13 @@ p {
 .btn--outlined_white:hover {
     color: var(--black);
 	border-color: #D5D5D5;
-    background-color: transparent;
+    background-color:rgba(117, 117, 117, 0.2);
+}
+
+.btn--outlined_white:active {
+    color: var(--black);
+	border-color: #D5D5D5;
+    background-color:rgba(117, 117, 117, 0.45);
 }
 
 
