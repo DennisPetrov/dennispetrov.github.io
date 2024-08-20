@@ -2166,7 +2166,7 @@ a.spec-tab-content-video-link {
     transform: rotate(90deg);
     animation-duration: 2s;
     animation-name: circular;
-    animation-timing-function: cubic-bezier(0.075, 0.5, 0.165, 1);
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.9, 1);
     animation-fill-mode: forwards;
 }
 .rating-bubbles-item-rate-inner > div {
