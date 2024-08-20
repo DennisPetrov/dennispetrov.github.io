@@ -122,12 +122,22 @@ function initMenu() {
 }
 
 function initTechSlider() {
-    window.tns({
+    const slider = window.tns({
         container: '.tech-block-items',
         items: 1,
         autoplay: true,
         controls: false,
+        autoplayTimeout: 9000,
+        mode: "gallery",
         gutter: 20
+    });
+
+    slider.events.on('transitionEnd', (info) => {
+        const video = info.event.target.querySelector("video");
+        video.pause();
+        video.currentTime = 0;
+        video.play();
+
     });
 }
 function initFullScreenWidthGallerSlider() {
