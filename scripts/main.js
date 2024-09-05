@@ -146,6 +146,7 @@ function initFullScreenWidthGallerSlider() {
         items: 1,
         autoplay: true,
         controls: false,
+        mouseDrag: true,
         gutter: 20,
         responsive: {
             768: {
@@ -160,12 +161,23 @@ function initFullScreenWidthGallerSlider() {
     });
 }
 function initWelcomeSlider() {
+    // const navContainer = document.querySelector(".welcome-slider-controls-dots");
+    // const items = document.querySelectorAll(".welcome-slider-item");
+
+    // for (let i = 0; i < items.length; i++) {
+    //     const button = document.createElement("div");
+    //     navContainer.appendChild(button);
+    // }
+
     window.tns({
         container: '.welcome-slider-inner',
+        // controlsContainer: document.querySelector(".welcome-slider-controls-nav"),
+        // navContainer: navContainer,
         items: 1,
         autoplay: true,
         gutter: 15,
         controls: true,
+        mouseDrag: true,
         fixedWidth: 359,
         responsive: {
             768: {
