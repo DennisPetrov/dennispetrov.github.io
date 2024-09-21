@@ -128,8 +128,7 @@ function initTechSlider() {
         autoplay: true,
         controls: false,
         autoplayTimeout: 9000,
-        mode: "gallery",
-        gutter: 20
+        mode: "gallery"
     });
 
     slider.events.on('transitionEnd', (info) => {
